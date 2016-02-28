@@ -12,3 +12,18 @@ def calculate_maximum(lcp_intervals):
     for interval in lcp_intervals:
         possible_matches += interval.number_of_witnesses
     return possible_matches
+
+
+class DecisionNode(object):
+    def __init__(self):
+        self.coordinates = (0, 0, 0)
+    pass
+
+
+class DecisionTree(object):
+
+    def __init__(self, witnesses):
+        self.witnesses = witnesses
+        self.root = DecisionNode()
+
+    pass
